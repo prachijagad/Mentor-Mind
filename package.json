@@ -2,9 +2,13 @@
   "name": "mentormind",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prisma:pull": "prisma db pull",
+    "prisma:generate": "prisma generate",
+    "prisma:studio": "prisma studio",
+    "start": "node app.js"
   },
   "repository": {
     "type": "git",
@@ -19,9 +23,12 @@
   },
   "homepage": "https://github.com/prachijagad/Mentor-Mind#readme",
   "dependencies": {
+    "@prisma/client": "^6.16.2",
     "cors": "^2.8.5",
     "dotenv": "^17.2.2",
     "express": "^5.1.0",
-    "pg": "^8.16.3"
+    "pg": "^8.16.3",
+    "prisma": "^6.16.2",
+    "uuid": "^13.0.0"
   }
 }

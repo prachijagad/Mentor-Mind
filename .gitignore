@@ -1,2 +1,6 @@
 .env
 node_modules/
+
+/generated/prisma
+backup.sql
+backup_utf8.sql
