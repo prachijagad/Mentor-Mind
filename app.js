@@ -17,7 +17,7 @@ const prisma = new PrismaClient();
 app.get("/courses", async (req, res) => {
   try {
     // const result = await prisma.user.deleteMany();
-    const tasks = await prisma.Task.findMany();
+    const tasks = await prisma.session.findMany();
     // const result = await prisma.user.create({
     //   data: {
     //     email: "dualipa@gmamil.com",
@@ -51,6 +51,6 @@ app.get("/", (req, res) => {
   res.send("Backend is running!");
 });
 
-app.listen(3000, () => {
-  console.log("Server is running on port 3000");
+app.listen(8080, () => {
+  console.log("Server is running on port 8080");
 });
